@@ -1,0 +1,2 @@
+E:\Archivos\Documents\GitHub\JSONpp\devTest\x64\Debug\devTest.exe
+E:\Archivos\Documents\GitHub\JSONpp\devTest\x64\Debug\devTest.pdb

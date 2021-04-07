@@ -1,0 +1,18 @@
+name: clang
+
+on:
+  push:
+    branches:  main 
+  pull_request:
+    branches:  main 
+jobs:
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+     # - name: Install
+     #    run: brew install llvm
+      - name: Build
+        run: clang++ main.cpp -o main.out -Wall -std=c++11
+      - name: Run
+        run: ./main.out

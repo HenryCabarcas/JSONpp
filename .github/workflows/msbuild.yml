@@ -1,0 +1,16 @@
+name: MSBuild
+on:
+  push:
+    branches:  main 
+  pull_request:
+    branches:  main 
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ilammy/msvc-dev-cmd@v1
+    - name: Build
+      run: cl.exe main.cpp /std:c++11
+    - name: Run
+      run: start main.exe

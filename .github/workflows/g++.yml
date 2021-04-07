@@ -1,0 +1,16 @@
+name: g++
+on:
+  push:
+    branches:
+    - main
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install
+      run: sudo apt install g++ make -y
+    - name: build
+      run: g++ main.cpp -o main.out -Wall -Wextra -std=c++11
+    - name: run
+      run: ./main.out

@@ -1,0 +1,3 @@
+﻿  main.cpp
+E:\Archivos\Documents\GitHub\JSONpp\src\JSONpp.h(843,29): warning C4267: '=': conversion from 'size_t' to 'long', possible loss of data
+  devTest.vcxproj -> E:\Archivos\Documents\GitHub\JSONpp\devTest\x64\Debug\devTest.exe
