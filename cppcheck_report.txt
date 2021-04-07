@@ -1,0 +1,14 @@
+src/JSONpp.h:94:2: error: syntax error [syntaxError]
+ enum class Type             // Enum that determines the var type
+ ^
+jpp.cpp:11:0: style: The function 'TimeDuration' is never used. [unusedFunction]
+
+^
+jpp.cpp:6:0: style: The function 'hClock' is never used. [unusedFunction]
+
+^
+jpp.cpp:15:0: style: The function 'log' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
